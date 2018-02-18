@@ -1,1 +1,5 @@
 @import "netlify-cms/dist/cms.css";
+
+.nc-collectionPage-topNewButton {
+  background-color: red;
+}
