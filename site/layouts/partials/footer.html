@@ -60,9 +60,10 @@
 				var account = $(this).data("account");
 				var mixTitle = $(this).data("mix-title");
 				var mixSrc = "https://www.mixcloud.com/widget/iframe/?feed=%2F"+ account +"%2"+ mixTitle +"%2F&footer_widget=1&autoplay=1";
-				// var mixSrc = $(this).data("src");
+				var src = $(this).data("src");
 				console.log(mixSrc);
-				var currentSource = $('.mixcloud-footer-widget-container > iframe').attr( 'src', mixSrc);
+				console.log(src);
+				var currentSource = $('.mixcloud-footer-widget-container > iframe').attr( 'src', src);
 			}
 		});
 	});
