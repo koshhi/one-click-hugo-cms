@@ -12,3 +12,15 @@
   box-shadow: inset 0 0 0 2px var(--primary);
   transition: var(--hover-transition);
 }
+
+.mixcloud-btn {
+  padding: 1rem;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.mixcloud-btn:hover {
+  opacity: 0.8;
+}

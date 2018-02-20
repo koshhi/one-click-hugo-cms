@@ -51,6 +51,21 @@
 {{ partial "svg" . }}
 
 <script src="/app.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function (e) {
+		$('.mixcloud-btn').on({
+			'click': function(){
+				console.log("clicked!");
+				var mixSrc = $(this).data("src");
+				console.log(mixSrc);
+				var currentSource = $('.mixcloud-footer-widget-container > iframe').attr( 'src', mixSrc);
+				// $('.mixcloud-footer-widget-container').children().attr('src', mixSrc);
+			}
+		});
+	});
+
+</script>
 
 </body>
 
